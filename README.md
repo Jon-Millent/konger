@@ -1,7 +1,8 @@
 # Pronunciation-help-jp-cn
 将日语转换成汉语的读法。对学习日语很有用！
 
-
+##演示
+http://www.thisummer.top/children/Pronunciation-help-jp-cn
 #如何开始
 
 ##引入js文件

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./show.css">
+</head>
+<body>
+	<div class="box center-qurter">
+		<div class="left">
+			<textarea id="jp"></textarea>
+			<span class="tag">日</span>
+		</div>
+		<div class="right">
+			<textarea id="ch" readonly="readonly"></textarea>
+			<span class="tag">中</span>
+			<span class="read" id="tip" style="opacity: 0">
+				TIP:在谷歌中读出来
+			</span>
+		</div>
+		<a class="btn type1" id="btn">
+			翻译
+		</a>
+		<div class="message">
+			这是一个可以将日语的读音转成中文母语的读音的APP
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./readforj-c.js"></script>
+<script type="text/javascript">
+	window.onload=function(){
+		var ch = document.getElementById('ch');
+		var jp = document.getElementById('jp');
+		var btn = document.getElementById('btn');
+		var tip = document.getElementById('tip');
+		var a = new Readhelp();
+		var now = true;
+		btn.onclick=function(){
+			ch.value = a.toTranslate(jp.value)
+		}
+		ch.onmouseenter=function(){
+
+			if(ch.value != ''){
+				tip.style.opacity='0.8';
+			}
+
+		}
+		tip.onclick=function(){
+			window.open('http://translate.google.cn/#zh-CN/zh-CN/'+encodeURI(ch.value))
+		}
+	}
+</script>
+</html>

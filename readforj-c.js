@@ -43,7 +43,7 @@
 				if(try1){
 					lastArr.push(try1)
 				}else if(try2){
-					lastArr.push(try1)
+					lastArr.push(try2)
 				}else if(this.isChinese(tStr)){
 					this.dataFactory.push({
 						t : tStr,

@@ -5,7 +5,7 @@
 http://www.thisummer.top/children/Pronunciation-help-jp-cn
 
 
-#如何开始（どのように始めるために）
+#如何开始（どのように始めるために）<br />
 
 
 ###引入js文件（JSファイルの紹介）
@@ -22,7 +22,7 @@ console.log(a.toTranslate('こんにちは'));
 ```
 
 
-#转译说明（翻訳説明）
+#转译说明（翻訳説明）<br />
 ###中日文字对照表（中日文字テーブル）
 
 

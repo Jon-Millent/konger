@@ -3,7 +3,7 @@
 （日本は中国の発音を変換します。日本語を学習するのに便利です！）d=====(￣▽￣*)b<br />
 ###演示（ショー）\(^o^)/~
 http://www.thisummer.top/children/Pronunciation-help-jp-cn
-
+![image](https://github.com/Jon-Millent/Pronunciation-help-jp-cn/blob/master/image/bg.png)  
 
 #如何开始（どのように始めるために）<br />
 

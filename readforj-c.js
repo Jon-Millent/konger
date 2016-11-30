@@ -102,11 +102,12 @@
 			})
 			for(var i =0 ; i < this.dataFactory.length; i++){
 				if(this.dataFactory[i].rev){
-					var fox = '';
+					var fox = '(';
 					var tg = this.dataFactory[i].rev.split(',');
 					for(var j = 0; j<tg.length;j++){
 						fox+=yings[tg[j]]
 					}
+					fox+=')';
 					lastArr.splice(this.dataFactory[i].index,0,fox)
 				}else{
 					lastArr.splice(this.dataFactory[i].index,0,this.dataFactory[i].t)

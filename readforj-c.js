@@ -47,9 +47,9 @@
 		numbering : ['43,15,11','3,1','1,16','31,47','0,33','71','4','4,45','5','5','72,20','5,1','46,48','6','15,30','7','17','1,22','31','50','7,16','50','6,56,39','35,30','50','37','1,19','0,51','31,31','73','18','19,4','59','74','74','34,39','75','31,58','13','13','4','37','13,6','0,5','12,71','5,43','12,71','72,35','76','0,11','32,77','56,1','4,19,9','15,6','74','32,11','74','15','19','1','21','1,39','11,42','72,16','35,7','63,71','34','78','32,3','32,3','39,7','42,7']
 	};
 	var chineseTest = /^[\u4e00-\u9fa5]+$/;
+	
 	function Factory(){
 		this.dataFactory={};
-		this.init();
 	}
 	Factory.prototype.fake={};
 	Factory.prototype.holiday={};
@@ -61,6 +61,7 @@
 			this.fake[fake[i]] = yings[i];
 			this.holiday[holiday[i]] = yings[i];
 		}
+		return this;
 	}
 	Factory.prototype.toTranslate = function(str){
 		if(str){
@@ -120,6 +121,8 @@
 
 	}
 
-	window.Readhelp = Factory;
+	root.Readhelp = function(){
+		return new Factory().init();
+	}
 
 })(window)

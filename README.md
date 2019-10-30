@@ -4,7 +4,7 @@
 <br />
 ![image](https://github.com/Jon-Millent/Pronunciation-help-jp-cn/blob/master/image/bg.png)  
 ### 演示（ショー）\(^o^)/~
-http://www.thisummer.top/children/Pronunciation-help-jp-cn
+https://show.verydog.cn/konger/index.html
 
 
 # 如何开始（どのように始めるために）<br />
